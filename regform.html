@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reg. Form</title>
+    <link rel="icon" href="https://www.flaticon.com/free-icon/form_18558195" />
+    <style>
+      * {
+        background-color: rgb(36, 36, 163);
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Course Reg. form</h1>
+
+    <form style="width: 500px" action="/index.html">
+      <fieldset>
+        <legend style="color: chartreuse">Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="firstname">First Name</label></td>
+            <td>
+              <input
+                type="text"
+                placeholder="Eg: Suma"
+                maxlength="25"
+                minlength="2"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="surname">Surname</label></td>
+            <td><input type="text" placeholder="MS" required /></td>
+          </tr>
+          <tr>
+            <td><label for="mobnum">Mobile number</label></td>
+            <td><input type="tel" placeholder="+91 9876554321" required /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input type="email" placeholder="dsssssss09@gmal.com" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">password</label></td>
+            <td><input type="password" required /></td>
+          </tr>
+          <tr>
+            <td><label for="password">Confirm password</label></td>
+            <td><input type="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="dob">DOB</label></td>
+            <td><input type="date" /></td>
+          </tr>
+          <tr>
+            <td><label for="gender"></label></td>
+            <td>
+              <input name="gender" type="radio" value="MALE" />
+              <label> Male</label>
+
+              <input name="gender" type="radio" value="FEMALE" />
+              <label> Female</label>
+
+              <input name="gender" type="radio" value="CUSTOM" />
+              <label>Custom</label> <br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="country">Select country</label></td>
+            <td>
+              <select>
+                <option value="">---Select Country---</option>
+                <option value="INDIA">INDIA</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="pic">Upload Picture</label></td>
+            <td><input type="file" multiple /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend style="color: rgb(242, 51, 12)">Course Details</legend>
+        <label for="sc">Select Course:</label> <br />
+        <select>
+          <option value="sc">---select course---</option>
+          <option value="wd">Web Development</option>
+          <option value="fsd">Full Stack Development</option>
+          <option value="h & c">HTML & CSS</option>
+          <option value="ds">Data Science</option>
+          <option value="da">Data Analytics</option>
+        </select>
+        <br />
+
+        <label for="dm">Delivary Mode:</label>
+        <input name="dm" type="radio" value="Online" /><label for=""
+          >Online</label
+        >
+        <input name="dm" type="radio" value="Offline" /><label for=""
+          >Offline</label
+        ><br />
+
+        <label for="">Give your feedback: </label><br />
+        <textarea
+          style="resize: none"
+          rows="5"
+          cols="30"
+          placeholder="ex feedback"
+          id=""
+        ></textarea
+        ><br />
+      </fieldset>
+      <input type="reset" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
